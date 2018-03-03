@@ -13,7 +13,7 @@ export const Header = () => (
   <Container>
     <Nav>
       <Link to="/">
-        <header>Camels and Snakes</header>
+        <Title>Camels and Snakes</Title>
       </Link>
       <Menus>
         {menus.map(menu => 
@@ -28,6 +28,10 @@ export const Header = () => (
   </Container>
 )
 
+const Title = styled.header`
+  ${media.phone`max-width: 120px;`}
+`
+
 const Nav = styled.nav`
   padding: 72px 0 56px 0;
   display: flex;
@@ -36,7 +40,7 @@ const Nav = styled.nav`
   a {
     text-decoration: none;
     color: #303030;
-    font-size: 20px;
+    font-size: 1.2em;
   }
 `
 
