@@ -33,12 +33,6 @@ I believe in the power of diversity in tech and the power of technology to make 
 
 ---
 
-## Tools
-- Collaborate : Github / Gitlab / Bitbucket
-- Editor : VSCode / Pycharm
-
----
-
 ## Press
 
 - [Jiyoung Hwang: Django Girls Organizer](https://wi-tech.org/2017/11/05/jiyoung-hwang-django-girls-organizer/), Witech, 2017.11.05
