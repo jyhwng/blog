@@ -9,6 +9,8 @@ type: ""
 
 [Clean Code: A Handbook Of Agile Software Craftsmanship (2009)](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=34083680) 라는 책을 읽고 정리한 글입니다. 책의 예제는 Java 로 쓰여 있어서 Python으로 쓰인 코드도 함께 찾아보았습니다. 이 책은 그 자체가 클린코드입니다. 코드를 작성하는 원칙과 철학에서 실제 코드까지 설명이 명확하고 군더더기가 없습니다. 실제로 읽다가 노트북을 켜고 리팩토링하며 무릎을 탁친 경우가 적지 않았습니다.
 
+- [Clean Code (2)](/clean-code-2)
+
 ---
 
 ## 1. 깨끗한 코드

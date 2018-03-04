@@ -1,6 +1,6 @@
 ---
 path: "/dangolgongjang"
-date: ""
+date: "2017-06-01"
 title: "Dangolgongjang"
 tags: ["Project"]
 excerpt: "Crowdfunding platform for manufacturers"

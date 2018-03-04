@@ -1,6 +1,6 @@
 ---
 path: "/about"
-date: ""
+date: "2017-02-01"
 title: "About me"
 tags: ["About"]
 excerpt: ""

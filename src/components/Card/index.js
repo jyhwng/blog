@@ -8,7 +8,7 @@ export const Card = ({postType, path, title, date, excerpt}) => (
       {title}
     </Link>
     <Excerpt>{excerpt}</Excerpt>
-    <Date>{date}</Date>
+    {!['project', 'about'].includes(postType) && <Date>{date}</Date>}
   </CardBase>
 )
 
