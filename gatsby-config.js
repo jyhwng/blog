@@ -15,6 +15,7 @@ module.exports = {
               classPrefix: "language-",
             },
           },
+          `gatsby-remark-emoji`,
         ],
       },
     },

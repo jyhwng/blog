@@ -21,6 +21,7 @@ const PostBase = styled.div`
 
 const Hr = styled.hr`
   margin: 72px 0;
+  border: 1px solid #efefef;
 `
 
 const Content = styled.div`
@@ -46,6 +47,6 @@ const Content = styled.div`
   `}
   hr {
     margin: 32px 0;
-    border: 0.5px solid initial;
+    border: 1px solid #efefef;
   }
 `
