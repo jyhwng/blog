@@ -37,17 +37,18 @@ Come and say hi at [Twitter](https://twitter.com/@jyhwng)
 
 ## Conferences & Seminars
 
-(I didn't necessarily spoke at these events but just wanted to keep track on my attendance because why not.)
+(I didn't necessarily spoke at these events but just wanted to keep track on my attendance because why not)
 
 2018
 - JSConf 2018, 2018.6, Berlin 🇩🇪
 - Django Girls 2018 Workshop, 2018.6, Seoul
-- Women Techmakers, 2018.4, Seoul
+- Women Techmakers 2018, 2018.4, Seoul
 - Typescript Meetup, 2018.1, Seoul
 
 2017
 - React Seoul 2017, 2017.11, Seoul
 - FrontEndConf 2017, 2017.10, Seoul
+- DEVIEW 2017, 2017.10, Seoul
 - Hack4Climate Korea, 2017.9, Seoul
 - Vuetiful Korea, 2017.8, Seoul
 - PyCon 2017, 2017.8, Seoul

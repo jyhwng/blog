@@ -38,6 +38,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   ${media.tablet`padding: 48px 16px;`}
   a {
+    font-weight: bold;
     text-decoration: none;
     color: #303030;
     font-size: 1.2em;

@@ -25,6 +25,20 @@ module.exports = {
         name: 'src',
         path: `${__dirname}/src`
       }
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/favicon.png",
+        injectHTML: true,
+        icons: {
+          appleIcon: true,
+          appleStartup: true,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+        }
+      }
     }
   ],
 };
