@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../utils/style.js'
+import './index.css';
 
 export const Post = ({title, date, html}) => (
   <PostBase>
