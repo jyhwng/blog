@@ -11,4 +11,6 @@ type: "project"
 
 [repick.co](https://repick.co/)
 
-"Premium products, curated daily" - VueJS/Meteor run project. Created component based reusable codes. Used vue-meteor-tracker to get responsive data from MongoDB. Extensive use of Sass(variables, mixins and etc). Implemented Algolia for instant search. Wrote Python script on AWS Lambda to scrape product information from url. Refactored old JQuery into Vue code. Collaborating via Bitbucket with feature branch workflow and active code reviews. Working fully remotely with the help of Asana and weekly pair-programming.
+![Imgur](https://i.imgur.com/4ZM6E0l.gif)
+
+"Premium products, curated daily" - Created reusable component with VueJS and Meteor. Extensive use of Sass(variables, mixins and etc). Implemented Algolia for instant search. Wrote Python script on AWS Lambda to scrape product information from url. Refactored JQuery into Vue code. Collaborated via Bitbucket with feature branch workflow and active code reviews. Worked fully remotely with the help of Asana and weekly pair-programming.
