@@ -5,7 +5,7 @@ import { media } from '../../utils/style.js'
 import { Container } from '../Container'
 
 const menus = [ 
-  {name: 'Post', route: '/'},
+  {name: 'Posts', route: '/'},
   {name: 'About', route: '/about'}
 ]
 

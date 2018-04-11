@@ -30,6 +30,7 @@ Come and say hi at [Twitter](https://twitter.com/@jyhwng)
 ---
 
 ## Database
+- Graphql
 - MySQL
 - MongoDB
 
