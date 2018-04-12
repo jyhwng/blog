@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { media } from '../utils/style.js'
 
 const About = () => (
     <Wrapper>
         <Section>
-            <p>I'm Jiyoung Hwang, a self-taught web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
+            <p>I'm Jiyoung Hwang, a web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
             <p>I love to create playful UI, learn new tools and frameworks and share through blog posts and workshops. I believe in the power of diversity in tech and the power of technology to make the world flatter and more connected.</p>
             <p>Come and say hi to me at <a href="https://twitter.com/@jyhwng" target="_blank">Twitter</a></p>
         </Section>
@@ -41,6 +42,7 @@ const About = () => (
                     <Tag>CSS3</Tag>
                     <Tag>Sass</Tag>
                     <Tag>Less</Tag>
+                    <Tag>Storybook</Tag>
                 </div>
             </Columns>
         </Section>
@@ -84,6 +86,9 @@ const About = () => (
 
 const Wrapper = styled.div`
     margin-bottom: 160px;
+    ${media.tablet`
+        padding: 0 16px;
+    `}
 `
 
 const Columns = styled.div`
