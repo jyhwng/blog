@@ -13,7 +13,7 @@ export const Card = ({postType, path, title, date, excerpt}) => (
 )
 
 const CardBase = styled.article`
-  border-top: 2px solid #303030;
+  border-top: 1px solid #303030;
   padding: 16px 0;
   position: relative;
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);

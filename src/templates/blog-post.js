@@ -6,12 +6,12 @@ import { Post } from '../components/Post'
 const Template = ({ data, location, pathContext }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const { title, date } = frontmatter
+  const { title, date, excerpt } = frontmatter
 
   return (
     <div>
       <Helmet title={`${title} - Camels and Snakes`}/>
-      <Post title={title} date={date} html={html}/>
+      <Post title={title} date={date} html={html} excerpt={excerpt}/>
     </div>
   )
 }

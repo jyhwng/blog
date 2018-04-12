@@ -93,15 +93,16 @@ const Wrapper = styled.div`
 
 const Columns = styled.div`
     display: grid;
-    grid-row-gap: 2em;
+    grid-row-gap: 1em;
     grid-template-columns: 1fr 1fr;
-    h3 {
-        margin-top: 0;
-    }
 `
 
 const Section = styled.section`
+    padding-top: 24px;
     margin-bottom: 40px;
+    & + & {
+        border-top: 1px solid #ddd;
+    }
     li {
         margin-bottom: 4px;
     }

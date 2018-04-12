@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import { media } from '../../utils/style.js'
 import './index.css';
 
-export const Post = ({title, date, html}) => (
+export const Post = ({title, date, excerpt, html}) => (
   <PostBase>
     <h1>{title}</h1>
-    <p>{date}</p>
+    <P>{excerpt}</P>
+    <P>{date}</P>
     <Hr/>
     <Content dangerouslySetInnerHTML={{__html: html}}/>
   </PostBase>
@@ -18,6 +19,10 @@ const PostBase = styled.div`
   ${media.tablet`
     padding: 0 16px;
   `}
+`
+
+const P = styled.p`
+  margin: 0;
 `
 
 const Hr = styled.hr`
