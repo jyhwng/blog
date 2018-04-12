@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import { Post } from '../components/Post'
 
 const Template = ({ data, location, pathContext }) => {
-  const { markdownRemark: post } = data
-  const { frontmatter, html } = post
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
   const { title, date } = frontmatter
 
   return (

@@ -16,8 +16,8 @@ export const Header = () => (
         <Title>Camels and Snakes</Title>
       </Link>
       <Menus>
-        {menus.map(menu => 
-          <Menu>
+        {menus.map((menu, index) => 
+          <Menu key={index}>
             <Link to={menu.route}>
             {menu.name}
             </Link>

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Header } from '../components/Header'
+import { Container } from '../components/Container'
 import './index.css'
 
 require("./syntax.css");
@@ -25,10 +26,5 @@ const TemplateWrapper = ({ children }) => (
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
-
-const Container = styled.div`
-  max-width: 960px;
-  margin: auto;
-`
 
 export default TemplateWrapper

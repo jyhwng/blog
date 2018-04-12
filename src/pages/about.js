@@ -108,9 +108,7 @@ display: inline-block;
 padding: 4px 8px;
 margin-bottom: 8px;
     background-color: #fbe134;
-    & + & {
-        margin-left: 8px;
-    }
+    margin-right: 8px;
 `
 
 export default About

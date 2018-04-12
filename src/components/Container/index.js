@@ -8,4 +8,5 @@ export const Container = ({children}) => (
 const ContainerBase = styled.div`
   max-width: 960px;
   margin: 0 auto;
+  width: 100%;
 `
