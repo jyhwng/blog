@@ -7,6 +7,11 @@ excerpt: Javascript Patterns(2011)
 type: ""
 ---
 
+[자바스크립트 코딩 기법과 핵심 패턴(2011)](https://g.co/kgs/AkNCEg) 책을 읽고 정리한 글입니다.
+- [3장 - Literals and Constructors](https://jyhwng.github.io/blog/literals-and-constructors)
+
+---
+
 ## 1. 콜백이란?
 
 함수는 일급 객체다. 프로퍼티를 가질 수 있고, 변수에 할당할 수도 있고, 다른 함수에 인자로 전달할 수도 있다. 인자가 되는 함수를 __콜백함수__, 또는 __콜백__ 이라고 부른다.

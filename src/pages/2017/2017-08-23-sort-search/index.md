@@ -12,20 +12,24 @@ type: ""
 ---
 
 ## 1. Sequential search
+
 - Sequential search는 리스트에서 item을 찾을 때, 앞에서 하나씩 비교하며 찾는 방식이다.
 - Analysis
 
-    1. Unordered list
 
-    Case | Best Case | Worst Case | Average Case
-    item is present | 1 | n | n/2
-    item is not present | n | n | n
+1. Unordered list
 
-    2. Ordered list
+Case | Best Case | Worst Case | Average Case
+------ | ------ |------| -----
+item is present | 1 | n | n/2 
+item is not present | n | n | n 
 
-    Case    |	Best Case |   Worst Case  |   Average Case
-    item is present | 	1 |  n   |   n/2
-    item is not present |	1 |   n |   n/2
+2. Ordered list
+
+Case    |	Best Case |   Worst Case  |   Average Case
+    ------ | ------ |------| -----
+item is present | 	1 |  n   |   n/2
+item is not present |	1 |   n |   n/2
 
 ---
 

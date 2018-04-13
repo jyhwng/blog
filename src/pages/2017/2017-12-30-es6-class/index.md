@@ -9,6 +9,8 @@ type: ""
 
 출처 - [Mozilla Hacks](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
 
+> 개인적인 공부 노트로, 내용에 오류가 있을 수 있습니다.
+
 자바스크립트에서 class는 원래 function이다. class를 흉내낸 것. typeof 찍으면 function으로 나온다. 
 
 ---

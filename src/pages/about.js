@@ -5,7 +5,7 @@ import { media } from '../utils/style.js'
 const About = () => (
     <Wrapper>
         <Section>
-            <p>I'm Jiyoung Hwang, a web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
+            <p>I am Jiyoung Hwang, a web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
             <p>I love to create playful UI, learn new tools and frameworks and share through blog posts and workshops. I believe in the power of diversity in tech and the power of technology to make the world flatter and more connected.</p>
             <p>Come and say hi to me at <a href="https://twitter.com/@jyhwng" target="_blank">Twitter</a></p>
         </Section>
