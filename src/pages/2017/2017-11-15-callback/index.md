@@ -8,13 +8,16 @@ type: ""
 ---
 
 [자바스크립트 코딩 기법과 핵심 패턴(2011)](https://g.co/kgs/AkNCEg) 책을 읽고 정리한 글입니다.
-- [3장 - Literals and Constructors](https://jyhwng.github.io/blog/literals-and-constructors)
+
+:point_right: [3장 - Literals and Constructors](/literals-and-constructors)
 
 ---
 
 ## 1. 콜백이란?
 
 함수는 일급 객체다. 프로퍼티를 가질 수 있고, 변수에 할당할 수도 있고, 다른 함수에 인자로 전달할 수도 있다. 인자가 되는 함수를 __콜백함수__, 또는 __콜백__ 이라고 부른다.
+
+> 명시적으로 호출하는 함수가 아니라 함수를 일단 등록하고, 특정 이벤트가 발생하거나 특정 시점에 도달했을 때 호출되는 함수이다. 또는 특정 함수의 인자로 넘겨서 코드 내부에서 호출되는 함수도 콜백함수라고 한다. 대표적인 콜백 함수가 자바스크립트에서 event handler이다. - 인사이드 자바스크립트(2016)
 
 ```Javascript
 function writeCode(callback) {
@@ -30,7 +33,7 @@ function introduceBugs() {
 writeCode(introduceBugs)
 ```
 
-- 함수의 ()를 붙이면 즉시 실행, 붙이지 않으면 참조만 하고, 바깥 함수에서 알맞은 때에 실행해준다.
+- 함수의 `()`를 붙이면 즉시 실행, 붙이지 않으면 참조만 하고, 바깥 함수에서 알맞은 때에 실행해준다.
 
 ---
 
@@ -148,7 +151,7 @@ let findNodes = function(cbMethod, cbObject) {
 
 ## 4. 비동기 이벤트 리스너
 
-페이지 element에 이벤트 리스터를 붙이는 것은 사실, 이벤트가 발생했을 때, 호출될 콜백함수의 포인터를 전달하는 것이다.
+페이지 element에 이벤트 리스너를 붙이는 것은 사실, 이벤트가 발생했을 때, 호출될 콜백함수의 포인터를 전달하는 것이다.
 
 ```Javascript
 document.addEventListener("click", console.log, false)

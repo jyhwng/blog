@@ -8,7 +8,8 @@ type: ""
 ---
 
 [자바스크립트 코딩 기법과 핵심 패턴(2011)](https://g.co/kgs/AkNCEg) 책을 읽고 정리한 글입니다.
-- [4장 - Callback Pattern](https://jyhwng.github.io/blog/callback)
+
+:point_right: [4장 - Callback Pattern](/callback)
 
 ---
 

@@ -3,15 +3,18 @@ import styled from 'styled-components'
 import { media } from '../../utils/style.js'
 import './index.css';
 
-export const Post = ({title, date, excerpt, html}) => (
-  <PostBase>
-    <h1>{title}</h1>
-    <P>{excerpt}</P>
-    <P>{date}</P>
-    <Hr/>
-    <Content dangerouslySetInnerHTML={{__html: html}}/>
-  </PostBase>
-)
+export const Post = ({frontmatter, html}) => {
+  const {title, date, excerpt} = frontmatter
+  return (
+    <PostBase>
+      <h1>{title}</h1>
+      <P>{excerpt}</P>
+      <P>{date}</P>
+      <Hr/>
+      <Content dangerouslySetInnerHTML={{__html: html}}/>
+    </PostBase>
+  )
+} 
 
 const PostBase = styled.div`
   font-family: 'Noto Sans';

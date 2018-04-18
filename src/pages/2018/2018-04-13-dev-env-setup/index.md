@@ -28,9 +28,6 @@ brew install yarn
 # pure-prompt
 npm install --global pure-prompt
 
-# thefuck
-brew install thefuck
-
 # pyenv
 brew install pyenv
 

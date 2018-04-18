@@ -9,7 +9,7 @@ type: ""
 
 참고 : Ask Django
 
-[AWS로 Django 프로젝트 배포하기(1)](/django-aws)
+:point_right: [AWS로 Django 프로젝트 배포하기(1)](/django-aws)
 
 ## 1. AWS 인스턴스 생성하기
 

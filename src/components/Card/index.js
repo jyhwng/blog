@@ -47,8 +47,7 @@ const CardBase = styled.article`
 
 const Date = styled.p`
   font-size: 13px;
-  position: absolute;
-  bottom: 0;
+  margin-bottom: 0;
 `
 
 const Excerpt = styled.p`

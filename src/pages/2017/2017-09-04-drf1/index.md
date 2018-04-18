@@ -9,7 +9,7 @@ type: ""
 
 Django REST framework는 다양한 앱에서 DB에 접근할 수 있는 API endpoint를 만들어주는 프레임워크입니다. [Django REST framework Tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)을 따라하며 공부한 내용을 정리했습니다.
 
-- [Django REST framework (2) - Authentication & Permissions, Relationships & Hyperlinked API](/drf2)
+:point_right: [Django REST framework (2) - Authentication & Permissions, Relationships & Hyperlinked API](/drf2)
 
 ---
 

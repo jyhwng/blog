@@ -86,6 +86,6 @@ if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<project-name>.settings.dev")
 ```
 
-[AWS로 Django 프로젝트 배포하기(2)](/aws-deploy)
+:point_right: [AWS로 Django 프로젝트 배포하기(2)](/aws-deploy)
 
 __Let's code like a girl!__
