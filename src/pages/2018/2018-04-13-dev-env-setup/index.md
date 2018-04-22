@@ -7,6 +7,10 @@ excerpt: ""
 type: ""
 ---
 
+개발환경 세팅은 자주 있는 일이 아니기 때문에 기억하기 쉽지 않다. 빠르게 셋업하고 개발에 집중하기 위해 정리!
+
+---
+
 ## 1. Setup script
 
 ```bash
@@ -71,10 +75,11 @@ prompt pure
 	name = username
 	email = user@gmail.com
 [alias]
-	s = status
 	co = checkout
-	commend = commit --amend
-	...
+	s = status --short --branch
+	d = diff
+	ds = diff --staged
+	commend = commit --amend --no-edit
 ```
 
 ---

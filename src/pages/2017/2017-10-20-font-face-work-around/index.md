@@ -105,7 +105,7 @@ css 파일을 쓴다면 font-family 이름과 여러가지 포맷을 지정해�
     └── _variables.scss
 ```
 
-상대경로 `./fonts/NotoSans-Black.woff`로 지정해준 폰트가 받아지지 않는 것이었다. 그래서 폰트가 들어있는 `fonts/` 폴더에 `font.scss`파일을 추가해주었다. 그리고 `npm run watch-css` 명령어로 sass 파일을 컴파일해준다. 그러면 css 파일이 생긴다.
+상대경로 `./fonts/NotoSans-Black.woff`로 지정해준 폰트가 받아지지 않는 것이었다. 그래서 폰트가 들어있는 `fonts/` 폴더에 `font.scss`파일을 추가해주었다. 그리고 `npm run watch-css` 명령어로 sass 파일을 컴파일해준다. (`node-sass-chokidar`를 사용하였다.) 그러면 css 파일이 생긴다. 
 
 ```
 ├── fonts

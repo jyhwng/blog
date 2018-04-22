@@ -58,4 +58,10 @@ const Content = styled.div`
     margin: 32px 0;
     border: 0.5px solid #ddd;
   }
+  li > p {
+    margin-bottom: 0;
+  }
+  li + li {
+    margin-top: 8px;
+  }
 `
