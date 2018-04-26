@@ -2,7 +2,7 @@
 path: "/repick"
 date: "2017-11-01"
 title: "Repick.co"
-tags: ["Project"]
+tags: []
 excerpt: "Premium products, curated daily"
 type: "project"
 ---

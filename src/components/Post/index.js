@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../utils/style.js'
+import { Tag } from '../Tag'
 import './index.css';
 
 export const Post = ({frontmatter, html}) => {
-  const {title, date, excerpt} = frontmatter
+  const {title, date, excerpt, tags} = frontmatter
   return (
     <PostBase>
       <h1>{title}</h1>
       <P>{excerpt}</P>
+      <div>{tags.map(tag => <Tag>{tag}</Tag>)}</div>
       <P>{date}</P>
       <Hr/>
       <Content dangerouslySetInnerHTML={{__html: html}}/>
@@ -25,7 +27,7 @@ const PostBase = styled.div`
 `
 
 const P = styled.p`
-  margin: 0;
+  margin: 16px 0;
 `
 
 const Hr = styled.hr`

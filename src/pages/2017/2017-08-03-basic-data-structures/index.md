@@ -2,7 +2,7 @@
 path: "/basic-data-structures"
 date: "2017-08-03"
 title: "Basic Data Structures"
-tags: ['Algorithm']
+tags: ['Algorithm', 'python']
 excerpt: "Python Algorithm Study - Week 3, 4"
 type: ""
 ---

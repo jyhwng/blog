@@ -21,6 +21,7 @@ const IndexPage = ({data}) => {
             title={frontmatter.title}
             date={frontmatter.date}
             excerpt={frontmatter.excerpt}
+            tags={frontmatter.tags}
           />
         )
       })}

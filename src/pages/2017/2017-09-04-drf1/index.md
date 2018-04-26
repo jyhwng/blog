@@ -2,7 +2,7 @@
 path: "/drf1"
 date: "2017-09-04"
 title: "Django REST framework (1)"
-tags: ['REST, Django']
+tags: ['REST', 'Django']
 excerpt: "Serialization, Requests & Responses, Class-based views"
 type: ""
 ---

@@ -2,7 +2,7 @@
 path: "/dev-env-setup"
 date: "2018-04-14"
 title: "개발환경 세팅하기"
-tags: ['zsh', 'ohmyzsh']
+tags: ['zsh', 'ohmyzsh', 'pyenv', 'pyenv-virtualenv', 'autoenv', 'pure-prompt']
 excerpt: ""
 type: ""
 ---

@@ -2,7 +2,7 @@
 path: "/sort-search"
 date: "2017-08-23"
 title: "Sorting and Searching"
-tags: ['Algorithm']
+tags: ['Algorithm', 'python']
 excerpt: "Python Algorithm Study - Week 7, 8"
 type: ""
 ---

@@ -2,9 +2,9 @@
 path: "/font-face-work-around"
 date: "2017-10-20"
 title: "How to apply font like a boss"
-tags: ['HTML/CSS']
+tags: ['CSS', 'sass', 'react']
 excerpt: "@font-face work around"
-type: ""
+type: "tips"
 ---
 
 ## 1. Create `@font-face` mixin

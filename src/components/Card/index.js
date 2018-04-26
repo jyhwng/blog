@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import { Tag } from '../Tag'
 
-export const Card = ({postType, path, title, date, excerpt}) => (
+export const Card = ({postType, path, title, date, excerpt, tags}) => (
   <CardBase postType={postType}>
     <Link to={path}>
       {title}
     </Link>
     <Excerpt>{excerpt}</Excerpt>
+    <div>{tags.map(tag => <Tag>{tag}</Tag>)}</div>
     {!['project', 'about'].includes(postType) && <Date>{date}</Date>}
   </CardBase>
 )
@@ -35,13 +37,13 @@ const CardBase = styled.article`
     border: none;
     padding: 16px;
   `}
-  ${props => props.postType === 'about' && `
-    background-color: #303030;
-    border: none;
-    padding: 16px;
-    a {
-      color: white;
-    }
+  ${props => props.postType === 'tips' && `
+    // background-color: #303030;
+    // border: none;
+    // padding: 16px;
+    // a {
+    //   color: white;
+    // }
   `}
 `
 

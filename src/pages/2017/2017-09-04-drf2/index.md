@@ -2,7 +2,7 @@
 path: "/drf2"
 date: "2017-09-04"
 title: "Django REST framework (2)"
-tags: ['REST, Django']
+tags: ['REST', 'Django', 'authentication']
 excerpt: "Authentication & Permissions, Relationships & Hyperlinked APIs"
 type: ""
 ---

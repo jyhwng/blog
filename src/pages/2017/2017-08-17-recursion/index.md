@@ -2,7 +2,7 @@
 path: "/recursion"
 date: "2017-08-17"
 title: "Recursion"
-tags: ['Algorithm']
+tags: ['Algorithm', 'python']
 excerpt: "Python Algorithm Study - Week 5, 6"
 type: ""
 ---

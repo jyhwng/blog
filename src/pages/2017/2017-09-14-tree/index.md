@@ -2,7 +2,7 @@
 path: "/tree"
 date: "2017-09-14"
 title: "Trees"
-tags: ['Algorithm']
+tags: ['Algorithm', 'python']
 excerpt: "Python Algorithm Study - Week 9, 10"
 type: ""
 ---

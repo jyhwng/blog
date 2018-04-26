@@ -4,7 +4,7 @@ date: "2017-02-14"
 title: "AWS로 Django 프로젝트 배포하기(2)"
 tags: ['Django', 'AWS']
 excerpt: "ec2 인스턴스 생성부터 설정까지"
-type: ""
+type: "tips"
 ---
 
 참고 : Ask Django

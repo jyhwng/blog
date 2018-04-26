@@ -2,7 +2,7 @@
 path: "/es6-class"
 date: "2017-12-30"
 title: "Classes"
-tags: ['Javascript']
+tags: ['es6', 'Javascript']
 excerpt: "ES6 in depth"
 type: ""
 ---

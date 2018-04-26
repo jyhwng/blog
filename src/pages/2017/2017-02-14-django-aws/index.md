@@ -4,7 +4,7 @@ date: "2017-02-14"
 title: "AWS로 Django 프로젝트 배포하기(1)"
 tags: ['Django', 'AWS']
 excerpt: "배포를 위한 Django 파일 분기하기"
-type: ""
+type: "tips"
 ---
 
 참고 : Ask Django
