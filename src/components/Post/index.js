@@ -47,9 +47,12 @@ const Content = styled.div`
       position: relative;
     `}
   }
+  ul {
+    margin-top: 4px;
+  }
   p {
-    margin-top: 0;
-    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 0;
   }
   ${media.tablet`
     width: 100%;

@@ -4,26 +4,6 @@
  * @author Lea Verou
  */
 
-blockquote {
-  color: #aaa;
-  margin-left: 0;
-  padding-left: 1em;
-  border-left: 2px solid #aaa;
-}
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-table, td, th {
-  border: 1px solid #aaa;
-}
-
-td, th {
-  padding: 4px 8px;
-}
-
  code[class*="language-"],
  pre[class*="language-"] {
    color: black;
@@ -156,3 +136,30 @@ td, th {
    cursor: help;
  }
  
+ /* custom css */
+
+ blockquote {
+  color: #aaa;
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 2px solid #aaa;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid #aaa;
+}
+
+td, th {
+  padding: 4px 8px;
+}
+
+ pre[class*="language-"] {
+  padding: 1em;
+  margin: 16px 0;
+  overflow: auto;
+}
