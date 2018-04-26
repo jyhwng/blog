@@ -11,10 +11,9 @@ type: ""
 
 ---
 
-1. Stack
-    - insertion and deletion of items takes place only at a single end called *top* of the stack
-2. Queue
-3. Deque
+1. __Stack__ : insertion and deletion of items takes place only at a single end called *top* of the stack
+2. __Queue__
+3. __Deque__
 
 ---
 

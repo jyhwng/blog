@@ -4,11 +4,7 @@ import { Cards } from '../components/Cards'
 
 const IndexPage = ({data}) => {
   const posts = data.allMarkdownRemark.edges
-  posts.sort(function(x, y) {
-    const dateX = new Date(x.node.frontmatter.date)
-    const dateY = new Date(y.node.frontmatter.date)
-    return dateY - dateX
-  })
+
   return (
     <Cards>
       {posts.map(({node: post}, index) => {
@@ -31,7 +27,9 @@ const IndexPage = ({data}) => {
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       totalCount
       edges {
         node {

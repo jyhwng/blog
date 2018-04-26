@@ -3,11 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { media } from '../../utils/style.js'
 import { Container } from '../Container'
-
-const menus = [ 
-  {name: 'Posts', route: '/'},
-  {name: 'About', route: '/about'}
-]
+import { Menu } from '../Menu'
 
 export class Header extends React.Component {
   state = { isCollapsed: false }
@@ -37,7 +33,7 @@ export class Header extends React.Component {
       <TitleOverlay isCollapsed={isCollapsed}>
         <Wrapper>
           <Title/>
-          <MenuList/>
+          <Menu/>
         </Wrapper>
       </TitleOverlay>
     )
@@ -50,7 +46,7 @@ export class Header extends React.Component {
         {this.renderNavOverlay()}
         <Nav>
           <Title/>
-          <MenuList/>
+          <Menu/>
         </Nav>
       </Container>
     )
@@ -61,18 +57,6 @@ const Title = () => (
   <Link to="/">
     <span>🐫 and 🐍</span>
   </Link>
-)
-
-const MenuList = () => (
-  <Menus>
-    {menus.map((menu, index) => 
-      <Menu key={index}>
-        <Link to={menu.route}>
-        {menu.name}
-        </Link>
-      </Menu>
-    )}
-  </Menus>
 )
 
 const NavStyle = `
@@ -114,17 +98,4 @@ const Wrapper = styled.nav`
   max-width: 960px;
   ${media.tablet`padding: 0 16px;`}
   ${NavStyle}  
-`
-
-const Menus = styled.ul`
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`
-
-const Menu = styled.li`
-  & + & {
-    margin-left: 24px;
-  }
 `

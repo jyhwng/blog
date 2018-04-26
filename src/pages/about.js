@@ -2,47 +2,66 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../utils/style.js'
 
+const stack = {
+    languages: [
+        'Python',
+        'Javascript',
+        'Typescript',
+    ],
+    frameworks: [
+        'React',
+        'VueJS / Vuex',
+        'Gatsby',
+        'Meteor',
+        'Django',
+        'Django Rest Framework',
+    ],
+    database: [
+        'GraphQL',
+        'MySQL',
+        'MongoDB',
+    ],
+    test: [
+        'Jest',
+        'Enzyme',
+    ],
+    others: [
+        'HTML5',
+        'CSS3',
+        'Sass',
+        'Less',
+        'Storybook',
+    ]
+}
+
 const About = () => (
     <Wrapper>
         <Section>
             <p>I am Jiyoung Hwang, a web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
             <p>I love to create playful UI, learn new tools and frameworks and share through blog posts and workshops. I believe in the power of diversity in tech and the power of technology to make the world flatter and more connected.</p>
-            <p>Come and say hi to me at <a href="https://twitter.com/@jyhwng" target="_blank">Twitter</a></p>
+            <p>Come and say hi 👉 <a href="https://twitter.com/@jyhwng" target="_blank">Twitter</a></p>
         </Section>
         <Section>
             <Columns>
                 <div>
                     <h3>Languages</h3>
-                    <Tag>Python</Tag>
-                    <Tag>Javascript</Tag>
-                    <Tag>Typescript</Tag>
+                    {stack.languages.map(x => <Tag>{x}</Tag>)}
                 </div>
                 <div>
                     <h3>Frameworks & Libraries</h3>
-                    <Tag>React</Tag>
-                    <Tag>VueJS / Vuex</Tag>
-                    <Tag>Meteor</Tag>
-                    <Tag>Django</Tag>
-                    <Tag>Django Rest Framework</Tag>
+                    {stack.frameworks.map(x => <Tag>{x}</Tag>)}
                 </div>
                 <div>
                     <h3>Database</h3>
-                    <Tag>GraphQL</Tag>
-                    <Tag>MySQL</Tag>
-                    <Tag>MongoDB</Tag>
+                    {stack.database.map(x => <Tag>{x}</Tag>)}
                 </div>
                 <div>
                     <h3>Test</h3>
-                    <Tag>Jest</Tag>
-                    <Tag>Enzyme</Tag>
+                    {stack.test.map(x => <Tag>{x}</Tag>)}
                 </div>
                 <div>
                     <h3>Others</h3>
-                    <Tag>HTML5</Tag>
-                    <Tag>CSS3</Tag>
-                    <Tag>Sass</Tag>
-                    <Tag>Less</Tag>
-                    <Tag>Storybook</Tag>
+                    {stack.others.map(x => <Tag>{x}</Tag>)}
                 </div>
             </Columns>
         </Section>
@@ -113,6 +132,7 @@ color: #303030;
 display: inline-block;
 padding: 4px 8px;
 margin-bottom: 8px;
+text-transform: capitalize;
     background-color: #fbe134;
     margin-right: 8px;
 `
