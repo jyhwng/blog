@@ -42,13 +42,13 @@ export class Header extends React.Component {
   render() {
     const { isCollapsed } = this.state
     return (
-      <Container>
+      <Wrapper>
         {this.renderNavOverlay()}
         <Nav>
           <Title/>
           <Menu/>
         </Nav>
-      </Container>
+      </Wrapper>
     )
   }
 }
@@ -72,6 +72,7 @@ const NavStyle = `
 `
 
 const Nav = styled.nav`
+  width: 100%;
   padding: 72px 0 56px 0;
   ${media.tablet`padding: 48px 16px;`}
   ${NavStyle}

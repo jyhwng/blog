@@ -2,18 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../utils/style.js'
 import { Tag } from '../Tag'
+import { Container } from '../Container'
 import './index.css';
 
 export const Post = ({frontmatter, html}) => {
   const {title, date, excerpt, tags} = frontmatter
   return (
     <PostBase>
-      <h1>{title}</h1>
-      <P>{excerpt}</P>
-      <div>{tags.map(tag => <Tag>{tag}</Tag>)}</div>
-      <P>{date}</P>
+      <Container>
+        <h1>{title}</h1>
+        <P>{excerpt}</P>
+        <div>{tags.map(tag => <Tag>{tag}</Tag>)}</div>
+        <P>{date}</P>
+      </Container>
       <Hr/>
-      <Content dangerouslySetInnerHTML={{__html: html}}/>
+      <Container>
+        <Content dangerouslySetInnerHTML={{__html: html}}/>
+      </Container>
     </PostBase>
   )
 } 
@@ -36,14 +41,10 @@ const Hr = styled.hr`
 `
 
 const Content = styled.div`
-  width: 70%;
-  float: right;
   margin-bottom: 160px;
   h2 {
-    left: 0;
-    width: 25%;
     margin-top: 0;
-    position: absolute;
+    word-break: break-all;  /* break h2 in code block */
     ${media.tablet`
       width: auto;
       position: relative;

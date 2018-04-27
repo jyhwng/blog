@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { media } from '../utils/style.js'
+import { Container } from '../components/Container'
 
 const stack = {
     languages: [
@@ -35,6 +36,7 @@ const stack = {
 }
 
 const About = () => (
+    <Container>
     <Wrapper>
         <Section>
             <p>I am Jiyoung Hwang, a web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
@@ -101,6 +103,7 @@ const About = () => (
             </ul>
         </Section>
     </Wrapper>
+    </Container>
 )
 
 const Wrapper = styled.div`

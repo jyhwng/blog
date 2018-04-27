@@ -6,7 +6,7 @@ export const Container = ({children}) => (
 )
 
 const ContainerBase = styled.div`
-  max-width: 960px;
+  max-width: 640px;
   margin: 0 auto;
   width: 100%;
 `

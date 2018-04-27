@@ -4,14 +4,15 @@ import { Container } from '../Container'
 import { media } from '../../utils/style.js'
 
 export const Cards = ({children}) => (
-  <Container>
-    <Wrapper>
-      {children}
-    </Wrapper>
-  </Container>
+  <Wrapper>
+    {children}
+  </Wrapper>
 )
 
 const Wrapper = styled.div`
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(160px, auto);
