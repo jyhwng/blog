@@ -15,10 +15,10 @@ export class Footer extends Component {
       <div>
         <FooterBase isOpen={this.state.isOpen}>
           <Wrapper>
-              <p>Found an error? Help me correct by submitting issues <a href="https://github.com/jyhwng/blog/" target="_blank">here</a>.</p> 
-              <p>© 2017-2018 Jiyoung Hwang</p>
-            </Wrapper>
-          </FooterBase>
+            <p>Found an error? Help me correct by submitting issues <a href="https://github.com/jyhwng/blog/" target="_blank">here</a>.</p> 
+            <p>© 2017-2018 Jiyoung Hwang</p>
+          </Wrapper>
+        </FooterBase>
         <Button onClick={this.handleOpenFooter}/>
       </div>
     )
@@ -26,11 +26,13 @@ export class Footer extends Component {
 } 
 
 const Button = ({ onClick }) => (
-  <ButtonWrapper onClick={onClick}>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-      <line x1="12" y1="17" x2="12" y2="17"></line>
-    </svg>
+  <ButtonWrapper>
+    <Anchor onClick={() => window.scroll({top: 0, behavior: 'smooth'})}>
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+    </Anchor>
+    <Anchor onClick={onClick}>
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12" y2="17"></line></svg>
+    </Anchor>
   </ButtonWrapper>
 )
 
@@ -66,10 +68,23 @@ const Wrapper = styled.div`
   `}
 `
 
-const ButtonWrapper = styled.a`
+const ButtonWrapper = styled.div`
   position: fixed;
-  bottom: 24px;
-  right: 32px;
+  bottom: 16px;
+  right: 16px;
+`
+
+const Anchor = styled.a`
+  display: block;
   cursor: pointer;
+  svg {
+    width: 32px;
+    height: 32px;
+    stroke: #303030;
+    fill: #fff;
+  }
+  &:first-child {
+    margin-bottom: 8px;
+  }
 `
 

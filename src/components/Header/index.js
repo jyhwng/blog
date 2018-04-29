@@ -31,10 +31,10 @@ export class Header extends React.Component {
     const { isCollapsed } = this.state
     return (
       <TitleOverlay isCollapsed={isCollapsed}>
-        <Wrapper>
+        <Nav>
           <Title/>
           <Menu/>
-        </Wrapper>
+        </Nav>
       </TitleOverlay>
     )
   }
@@ -42,13 +42,13 @@ export class Header extends React.Component {
   render() {
     const { isCollapsed } = this.state
     return (
-      <Wrapper>
+      <Nav>
         {this.renderNavOverlay()}
-        <Nav>
+        <Wrapper>
           <Title/>
           <Menu/>
-        </Nav>
-      </Wrapper>
+        </Wrapper>
+      </Nav>
     )
   }
 }
@@ -71,7 +71,7 @@ const NavStyle = `
   }
 `
 
-const Nav = styled.nav`
+const Wrapper = styled.div`
   width: 100%;
   padding: 72px 0 56px 0;
   ${media.tablet`padding: 48px 16px;`}
@@ -83,8 +83,7 @@ const TitleOverlay = styled.div`
   left: 0;
   right: 0;
   top: -62px;
-  width: 100%;
-  padding: 16px 0;
+  padding: 16px;
   position: fixed;
   background-color: #fff;
   transition: top 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -94,9 +93,9 @@ const TitleOverlay = styled.div`
   `}
 `
 
-const Wrapper = styled.nav`
+const Nav = styled.nav`
+  width: 100%;
   margin: 0 auto;
   max-width: 960px;
-  ${media.tablet`padding: 0 16px;`}
   ${NavStyle}  
 `

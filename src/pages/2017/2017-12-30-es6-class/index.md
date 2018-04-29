@@ -100,7 +100,13 @@ class Square extends Polygon {
 }
 
 var square = new Square(2)
-console.log(square.area())  // 4 => Polygon의 get area() 메소드를 사용할 수 있다.
+console.log(square.area)  // 4 => Polygon의 get area() 메소드를 사용할 수 있다.
+```
+
+- 자식 클래스의 `constructor()`안에서는 `super()`를 호출하기 전까지 `this`에 접근할 수 없다. ([출처](https://stackoverflow.com/questions/31067368/how-to-extend-a-class-without-having-to-using-super-in-es6)) super()를 써주지 않고 this에 접근하면 아래와 같은 오류가 발생한다.
+
+```
+> Must call super constructor in derived class before accessing 'this' or returning from derived constructor
 ```
 
 ---
