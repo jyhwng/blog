@@ -1,15 +1,21 @@
 ---
 path: "/call-and-apply"
 date: "2018-04-14"
-title: "Call and apply"
+title: "this, call, apply and bind"
 tags: ['javascript']
-excerpt: "What are call and apply?"
+excerpt: "What is call, apply and bind?"
 type: ""
+---
+
+## 0. `this`
+
+https://blog.weirdx.io/post/3214
+
 ---
 
 ## 1. apply
 
-`call`과 `apply`는 기능(함수 호출)은 같고 받는 인자만 다르다. 둘다 `this` 키워드를 특정 객체에 바인딩 하는 메소드이다. 
+`call`과 `apply`는 기능 — 함수 호출하기 — 은 같고 받는 인자만 다르다. 둘다 `this` 키워드를 특정 객체에 바인딩 하는 메소드이다. 
 
 ```javascript
 func.apply(thisArg, argsArray)
@@ -42,10 +48,27 @@ Person.call(me, "Jane", "15")
 
 ---
 
-## 3. 언제 쓰나?
+:point_right: 언제 사용할까?
 
-- NodeList 등과 같은 유사 배열 객체에 배열 메소드를 쓰고 싶을 때 사용한다.
+- `apply`와 `call` 모두 `NodeList` 등과 같은 유사 배열 객체에 배열 메소드를 쓰고 싶을 때 사용한다.
 
 ```javscript
 Array.prototype.slice.apply(pseudoArray)
+```
+
+---
+
+## 3. bind
+
+- react 에서 bind 의 사용과 최근 권장 패턴
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+
+---
+
+## 4. Others
+
+1. `from`
+
+```javascript
+Array.from(Array(10).keys())  // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```

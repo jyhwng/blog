@@ -59,3 +59,18 @@ newbie는 재미를 느끼는 게 더 중요하다고 생각. 개념을 파면�
 
 출처 
 - [React.Component](https://reactjs.org/docs/react-component.html)
+
+---
+
+how browser work
+https://friendlybit.com/css/rendering-a-web-page-step-by-step/
+https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/
+
+react behind the scene
+https://velopert.com/3236
+https://reactjs.org/docs/thinking-in-react.html
+
+— 
