@@ -6,7 +6,6 @@ export class Footer extends Component {
   state = { isOpen: false }
 
   handleOpenFooter = () => {
-    console.log('clicked')
     this.setState({ isOpen: !this.state.isOpen })
   }
 
