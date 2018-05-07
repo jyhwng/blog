@@ -9,7 +9,7 @@ type: ""
 
 > 개인적인 공부 노트로, 내용에 오류가 있을 수 있습니다.
 
-ES6의 `class`도 사실 function이다.(`typeof`를 찍으면 `"function"`으로 나온다.) 단지 prototype 기반 상속보다 명확하게 표현하기 위한 [syntatic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)일 뿐!
+ES6의 `class`도 사실 function이다.(`typeof`를 찍으면 `"function"`으로 나온다.) 단지 prototype 기반 상속보다 명확하게 표현하기 위한 syntatic sugar일 뿐!
 
 ```javascript
 class Person {

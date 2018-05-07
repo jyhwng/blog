@@ -82,11 +82,11 @@ const TitleOverlay = styled.div`
   z-index: 1;
   left: 0;
   right: 0;
-  top: -62px;
+  top: -150px;
   padding: 16px;
   position: fixed;
   background-color: #fff;
-  transition: top 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: top 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
   border-bottom: 1px solid #ddd;
   ${props => props.isCollapsed && `
     top: 0;

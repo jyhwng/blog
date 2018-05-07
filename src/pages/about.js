@@ -5,11 +5,11 @@ import { Container } from '../components/Container'
 
 const stack = {
     languages: [
-        'Python',
         'Javascript',
         'Typescript',
+        'Python',
     ],
-    frameworks: [
+    'frameworks & libraries': [
         'React',
         'VueJS / Vuex',
         'Gatsby',
@@ -39,42 +39,25 @@ const About = () => (
     <Container>
     <Wrapper>
         <Section>
-            <p>I am Jiyoung Hwang, a web developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
-            <p>I love to create playful UI, learn new tools and frameworks and share through blog posts and workshops. I believe in the power of diversity in tech and the power of technology to make the world flatter and more connected.</p>
+            <p>I am Jiyoung Hwang, a frontend developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
             <p>Come and say hi 👉 <a href="https://twitter.com/@jyhwng" target="_blank">Twitter</a></p>
         </Section>
         <Section>
-            <Columns>
-                <div>
-                    <h3>Languages</h3>
-                    {stack.languages.map(x => <Tag>{x}</Tag>)}
-                </div>
-                <div>
-                    <h3>Frameworks & Libraries</h3>
-                    {stack.frameworks.map(x => <Tag>{x}</Tag>)}
-                </div>
-                <div>
-                    <h3>Database</h3>
-                    {stack.database.map(x => <Tag>{x}</Tag>)}
-                </div>
-                <div>
-                    <h3>Test</h3>
-                    {stack.test.map(x => <Tag>{x}</Tag>)}
-                </div>
-                <div>
-                    <h3>Others</h3>
-                    {stack.others.map(x => <Tag>{x}</Tag>)}
-                </div>
-            </Columns>
+            {Object.keys(stack).map((category, index) => (
+                <Column key={index}>
+                    <h3>{category}</h3>
+                    {stack[category].map((x, index) => <Tag key={index}>{x}</Tag>)}    
+                </Column>
+            ))}
         </Section>
         <Section>
             <h3>Press</h3>
             <ul>
                 <li>
-                <a href="https://wi-tech.org/2017/11/05/jiyoung-hwang-django-girls-organizer/" target="_blank">Jiyoung Hwang: Django Girls Organizer</a>, Witech, 2017.11.05
+                    <a href="https://wi-tech.org/2017/11/05/jiyoung-hwang-django-girls-organizer/" target="_blank">Jiyoung Hwang: Django Girls Organizer</a>, Witech, 2017.11.05
                 </li>
                 <li>
-                <a href="http://thepin.ch/techgear/m9qmfd/adela-branch-1" target="_blank">개발 공부하는 여자들, 장고걸스를 만나보았다</a>, Pinch, 2017.04.11
+                    <a href="http://thepin.ch/techgear/m9qmfd/adela-branch-1" target="_blank">개발 공부하는 여자들, 장고걸스를 만나보았다</a>, Pinch, 2017.04.11
                 </li>
             </ul>
         </Section>
@@ -113,10 +96,8 @@ const Wrapper = styled.div`
     `}
 `
 
-const Columns = styled.div`
-    display: grid;
-    grid-row-gap: 1em;
-    grid-template-columns: 1fr 1fr;
+const Column = styled.div`
+    margin-bottom: 2em;
 `
 
 const Section = styled.section`
@@ -128,14 +109,17 @@ const Section = styled.section`
     li {
         margin-bottom: 4px;
     }
+    h3 {
+        text-transform: capitalize;
+    }
 `
 
 const Tag = styled.div`
-color: #303030;
-display: inline-block;
-padding: 4px 8px;
-margin-bottom: 8px;
-text-transform: capitalize;
+    color: #303030;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
     background-color: #fbe134;
     margin-right: 8px;
 `

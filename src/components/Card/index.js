@@ -9,7 +9,7 @@ export const Card = ({postType, path, title, date, excerpt, tags}) => (
       {title}
     </Link>
     <Excerpt>{excerpt}</Excerpt>
-    <div>{tags.map(tag => <Tag>{tag}</Tag>)}</div>
+    <div>{tags.map((tag, index) => <Tag key={index}>{tag}</Tag>)}</div>
     {!['project', 'about'].includes(postType) && <Date>{date}</Date>}
   </CardBase>
 )

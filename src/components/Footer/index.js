@@ -28,7 +28,7 @@ export class Footer extends Component {
 const Button = ({ onClick }) => (
   <ButtonWrapper>
     <Anchor onClick={() => window.scroll({top: 0, behavior: 'smooth'})}>
-      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
     </Anchor>
     <Anchor onClick={onClick}>
       <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12" y2="17"></line></svg>
@@ -78,6 +78,7 @@ const Anchor = styled.a`
   display: block;
   cursor: pointer;
   svg {
+    opacity: 0.5;
     width: 32px;
     height: 32px;
     stroke: #303030;

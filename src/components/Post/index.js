@@ -12,7 +12,7 @@ export const Post = ({frontmatter, html}) => {
       <Container>
         <h1>{title}</h1>
         <P>{excerpt}</P>
-        <div>{tags.map(tag => <Tag>{tag}</Tag>)}</div>
+        <div>{tags.map((tag, index) => <Tag key={index}>{tag}</Tag>)}</div>
         <P>{date}</P>
       </Container>
       <Hr/>
