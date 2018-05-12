@@ -83,9 +83,34 @@ prompt pure
 
 ---
 
-## 4. `.env` 추가하기
-- python 프로젝트를 시작한다면, 프로젝트의 루트 디렉토리에 `.env` 파일을 만들고 아래 코드를 추가한다.
+## 4. pyenv-virtualenv, autoenv 설정하기
 
+- python 프로젝트를 시작한다면 `pyenv virtualenv <python-version> <project-name>`명령어로 가상환경을 추가한다. 
+- 가상환경 실행은 `pyenv activate <project-name>`으로 한다.
+- 프로젝트의 루트 디렉토리에 `.env` 파일을 만들고 위의 명령어를 저장하면 디렉토리에 진입했을 때 자동으로 가상환경을 실행시킬 수 있다.
+
+---
+
+## 5. lint-staged, prettier 설정하기
+
+- 수정된 파일을 스테이징할 때, prettier 설정에 따라 자동으로 linting을 해주는 라이브러리이다.
+- 꼭 `--dev` 플래그를 달아주어 devDependencies에 추가되도록 해야한다.
+
+```bash
+yarn add lint-staged husky prettier --dev
 ```
-pyenv activate project-name
+
+- 스크립트도 아래와 같이 수정해준다.
+
+```json
+// package.json
+"scripts": {
+	"precommit": "lint-staged",
+},
+"lint-staged": {
+	"*.{js,jsx}": [
+		"prettier --write",
+		"git add"
+	]
+},
 ```
