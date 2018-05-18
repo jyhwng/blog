@@ -34,3 +34,7 @@ a {
 p {    
   line-height: 1.6;
 }
+
+.twitter-tweet {
+  margin: 0 auto;
+}

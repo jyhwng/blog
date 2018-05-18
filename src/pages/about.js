@@ -66,7 +66,7 @@ const About = () => (
             2018
             <ul>
                 <li>Django Girls 2018 Workshop, 2018.6, Seoul</li>
-                <li>JSConf 2018, 2018.6, Berlin 🇩🇪</li>
+                <li>JSConf EU 2018, 2018.6, Berlin 🇩🇪</li>
                 <li>Women Techmakers 2018, 2018.4, Seoul</li>
                 <li>Typescript Meetup, 2018.1, Seoul</li>
             </ul>
