@@ -11,27 +11,16 @@ const stack = {
     ],
     'frameworks & libraries': [
         'React',
-        'VueJS / Vuex',
-        'Gatsby',
-        'Meteor',
+        'MobX',
+        'VueJS',
         'Django',
-        'Django Rest Framework',
     ],
     database: [
-        'GraphQL',
-        'MySQL',
         'MongoDB',
-    ],
-    test: [
-        'Jest',
-        'Enzyme',
     ],
     others: [
         'HTML5',
         'CSS3',
-        'Sass',
-        'Less',
-        'Storybook',
     ]
 }
 
@@ -39,7 +28,7 @@ const About = () => (
     <Container>
     <Wrapper>
         <Section>
-            <p>I am Jiyoung Hwang, a frontend developer and organizer of <a href="https://www.facebook.com/djangogirlsseoul/" target="_blank">Django Girls Seoul</a>.</p>
+            <p>I'm Jiyoung Hwang, learning web development since 2017.</p>
             <p>Come and say hi 👉 <a href="https://twitter.com/@jyhwng" target="_blank">Twitter</a></p>
         </Section>
         <Section>

@@ -94,9 +94,3 @@ class MyComponent extends React.Component {
   }
 }
 ```
----
-
-## 4. Synthetic event 붙일 때, arrow function
-- `onClick={() => {...}}` 이렇게 써도 될까, 안될까? 
-- 렌더링 할 때마다 불러오기 때문에 퍼포먼스 저해하지 않을까?
--> 별 차이 없다!
