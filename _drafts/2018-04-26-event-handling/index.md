@@ -46,7 +46,7 @@ const form = document.querySelector('form')
 const button = document.querySelector('button')
 
 function onSubmit(event) {
-  event.preventDefault()
+  event.preventDefault()  // event는 SyntheticEvent의 인스턴스이다.
   // submit behavior...
 }
 
@@ -68,5 +68,5 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#
 ...
 
 https://medium.com/@bretdoucette/part-4-what-is-event-delegation-in-javascript-f5c8c0de2983
-
+https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/
 ---

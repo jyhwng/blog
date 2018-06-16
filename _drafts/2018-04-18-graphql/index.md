@@ -24,6 +24,8 @@ REST는 endpoint가 많다. 정적으로 요청한다. graphql은 동적으로(?
 schema를 업데이트하면 백엔드와 싱크를 맞출 수 있다. 더이상 쓰이지 않는 필드들은 자동으로 여기서 없어진다. 
 
 * [declarative vs imperative](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2)
+  - declarative programming: 이 코드는 무엇을 해야한다를 먼저 선언하고 논리를 짜는 프로그래밍 패러다임
+  - declarative programming: 명령의 연속으로 어떤 행동을 시키는 것
 
 --
 
