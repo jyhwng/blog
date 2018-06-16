@@ -43,7 +43,7 @@ var earlGray = new Tea("Earl gray", 3000)
 
 :point_right: React 에서 `constructor()` 생략하기
 
-- `constructor()` 안에 `this.state`를 정의하지 않고 클래스 바디 안에서 바로 `state`로 정의하는 경우가 있다. 이를 [property initializer](https://www.fullstackreact.com/articles/use-property-initializers-for-cleaner-react-components/#with-property-initializers)라고 한다. 
+- `constructor()` 안에 `this.state`를 정의하지 않고 클래스 바디 안에서 바로 `state`로 정의하는 경우가 있다. babel의 [property initializer](https://www.fullstackreact.com/articles/use-property-initializers-for-cleaner-react-components/#with-property-initializers) 기능 때문이다. 
 - `transform-class-properties` babel plugin을 사용한다면 `constructor()`를 호출하지 않고도 `this`에 접근할 수 있다. 이러한 패턴은 더 깔끔한 코드를 위해 권장되며 널리 사용되고 있다.
 
 ```javascript
@@ -178,13 +178,6 @@ class App extends React.Component {
     }
 }
 ```
-
-컴포넌트의 인스턴스가 생성되고, DOM에 들어갈 때 이 메소드들이 (__번호 순서대로__) 불려진다. ([출처](https://reactjs.org/docs/react-component.html#mounting))
-
-1. `constructor()`
-2. `componentWillMount()`
-3. `render()`
-4. `componentDidMount()`
 
 ---
 

@@ -25,11 +25,11 @@ type: "tips"
 
 ## 2. 접속하기
 
-~~~
+```bash
 $ sudo chmod 400 <pem키>
 $ ssh-keygen -R <Elastic IP주소>
 $ ssh -i </pem키경로/pem키> ubuntu@<IP주소>
-~~~
+```
 
 1. pem 키가 있는 디렉토리로 가서 권한을 변경해줍니다.
 2. ssh 공개키/비밀키 생성과 관련있습니다.
@@ -42,13 +42,13 @@ $ ssh -i </pem키경로/pem키> ubuntu@<IP주소>
 
 이제 서비스에서 사용한 3rd party 패키지들을 설치해주어야합니다. * [AskDjango의 배포 자동화 스크립트](https://gist.github.com/allieus/b8186b6ed53cbe1e8564)를 사용했습니다.
 
-~~~
+```bash
 $ sudo wget https://repo.continuum.io/archive/Anaconda3-4.3.0-MacOSX-x86_64.pkg
 $ sudo apt-get update
 $ sudo apt-get install language-pack-ko git python3-pip -y
 $ sudo pip3 install jinja2 termcolor django==1.10.5
 $ sudo python3 django_dist.py <project-name>.settings.prod
-~~~
+```
 
 1. Python은 [Anaconda Python](https://www.continuum.io/downloads)을 설치하는 것이 간편합니다. 널리 사용되는 패키지들이 이미 들어있습니다. 사이트에 들어가서 다운로드 버튼을 우클릭하고 링크 주소를 복사하고 아래의 명령어를 실행합니다. wget을 사용해서 다운로드 링크만으로 터미널에서 다운로드를 받을 수 있습니다.
 2. apt-get 을 업데이트하고
@@ -62,11 +62,11 @@ $ sudo python3 django_dist.py <project-name>.settings.prod
 ## 4. 실행하기
 이제 DB를 마이그레이션 하고 서버를 실행하면 됩니다.
 
-~~~
+```bash
 $ sudo python3 manage.py makemigrations --settings=<project-name>.settings.dev
 $ sudo python3 manage.py migrate --settings=<project-name>.settings.dev
 $ sudo python3 manage.py runserver --settings=<project-name>.settings.dev 0.0.0.0:80
-~~~
+```
 
 마지막 명령어로 80포트로 runserver 합니다.
 
@@ -82,10 +82,10 @@ _끝! 그런데..._
 ## 6. 포트 kill하기
 테스트를 하다가 port 를 켜놓고 다시 접근하면 이미 점유된 포트라는 오류 메시지가 뜹니다. 이런 경우, 이전에 쓰던 port를 강제로 kill 해줍니다.
 
-~~~
+```bash
 $ fuser -k -n tcp <port.no>
 $ Isof -i TCP:<port.no>
-~~~
+```
 
 1. <port.no>자리에 포트 번호를 입력하여 포트를 kill 하고,
 2. 열려있는 port 를 조회하여 제대로 kill되었는지 확인합니다.

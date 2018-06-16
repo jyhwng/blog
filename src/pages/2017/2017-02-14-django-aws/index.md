@@ -17,7 +17,7 @@ Page not found 404 에러를 띄워줄 html 페이지를 만듭니다. 잘못된
 2. 템플릿을 상속받습니다.
 3. 포스트나 댓글 인스턴스를 불러올 때 `django shortcuts` 의 `get_object_or_404`를 이용합니다.
 
-```
+```python
 from django.shortcuts import redirect, render, get_object_or_404
 
 def post_detail(request, post_pk):
@@ -33,13 +33,13 @@ def post_detail(request, post_pk):
 2. 1번이 python 모듈이 되도록 `__init__.py`를 만들어줍니다.
 3. 2번 디렉토리 안에 `common.py`와 이를 import 하는 `dev.py`, `prod.py` 로 나눠줍니다.
 4. 원래 있던 `settings.py`의 내용을 `common.py`로 복사하고 디렉토리 경로를 한 depth 깊게 설정합니다.
-```
+```python
 BASE_DIR = dirname(dirname(dirname(os.path.abspath(__file__))))
 ```
 5. dev.py는 common.py를 전부 임포트 합니다.
 6. prod.py를 아래와 같이 설정합니다.
 
-```
+```python
 import os
 from .common import *
 
@@ -73,7 +73,7 @@ DATABASES = { 'default': {
 ## 3. 경로 설정하기
 `wsgi.py`는 사용자가 서비스(?)로 진입하는 지점입니다. 이 파일에서 아래와 같이 `<project-name>.settings` 부분을 수정해줍니다. 설정 파일을 찾는 경로를 수정해주는 것인데, 원래 있었던 `/<project-name>/settings.py`가 아니라 settings 디렉토리 아래의 prod.py 를 실행하라는 의미입니다.
 
-```
+```python
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<project-name>.settings.prod")
@@ -81,7 +81,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<project-name>.settings.prod")
 
 같은 방법으로 `manage.py` 파일에서 `<project-name>.settings.dev`로 수정해줍니다.
 
-```
+```python
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<project-name>.settings.dev")
 ```

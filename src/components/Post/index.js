@@ -50,11 +50,12 @@ const Content = styled.div`
       position: relative;
     `}
   }
-  ul {
+  ul, ol {
     margin-top: 4px;
+    padding-left: 20px;
   }
   p {
-    margin-top: 24px;
+    margin-top: 16px;
     margin-bottom: 0;
   }
   ${media.tablet`
